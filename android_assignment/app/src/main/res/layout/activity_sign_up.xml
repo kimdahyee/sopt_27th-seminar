@@ -26,7 +26,7 @@
         android:layout_marginRight="64dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:hint="이름을 입력해주세요."
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/tv_name"
         app:layout_constraintTop_toBottomOf="@+id/tv_name" />
@@ -47,7 +47,7 @@
         android:layout_marginTop="10dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:hint="아이디를 입력해주세요."
         app:layout_constraintEnd_toEndOf="@+id/et_name"
         app:layout_constraintStart_toStartOf="@+id/tv_id"
         app:layout_constraintTop_toBottomOf="@+id/tv_id" />
@@ -67,8 +67,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
+        android:inputType="textPassword"
+        android:hint="비밀번호를 입력해주세요."
         app:layout_constraintEnd_toEndOf="@+id/et_id"
         app:layout_constraintStart_toStartOf="@+id/tv_password"
         app:layout_constraintTop_toBottomOf="@+id/tv_password" />
