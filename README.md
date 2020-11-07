@@ -5,9 +5,9 @@
 
 ### 1주차 View와 ViewGroup (20.10.10)
 :heavy_check_mark: 필수 과제 / 성장 과제 1 (20.10.17 완료) 
-
+<br>
 > SignUpActivity 만들기 / 화면 이동 + @
-
+<br>
 1. 로그인 화면에서 "회원가입하러가기" 클릭 시 SignUpActivity로 이동 :arrow_right:
 
 	    tv_signup.setOnClickListener { //회원가입하러가기
