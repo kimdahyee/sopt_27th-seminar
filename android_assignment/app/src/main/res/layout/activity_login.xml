@@ -52,12 +52,25 @@
         app:layout_constraintStart_toStartOf="@+id/tv_password_login"
         app:layout_constraintTop_toBottomOf="@+id/tv_password_login" />
 
+<!--
     <Button
         android:id="@+id/btn_login"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="28dp"
         android:text="로그인"
+        app:layout_constraintEnd_toEndOf="@+id/et_password_login"
+        app:layout_constraintStart_toStartOf="@+id/et_password_login"
+        app:layout_constraintTop_toBottomOf="@+id/et_password_login" />
+-->
+
+    <androidx.appcompat.widget.AppCompatCheckedTextView
+        android:id="@+id/btn_login"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="28dp"
+        android:text="로그인"
+        android:background="@drawable/btn_login"
         app:layout_constraintEnd_toEndOf="@+id/et_password_login"
         app:layout_constraintStart_toStartOf="@+id/et_password_login"
         app:layout_constraintTop_toBottomOf="@+id/et_password_login" />
@@ -70,4 +83,5 @@
         android:text="회원가입하러가기"
         app:layout_constraintEnd_toEndOf="@+id/btn_login"
         app:layout_constraintTop_toBottomOf="@+id/btn_login" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
