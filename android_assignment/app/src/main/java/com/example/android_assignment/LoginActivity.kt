@@ -26,7 +26,7 @@ class LoginActivity : AppCompatActivity() {
                 et_password_login.text.isNullOrBlank() -> Toast.makeText(this, "비밀번호를 입력해주세요.", Toast.LENGTH_SHORT).show()
                 else -> {
                     Toast.makeText(this, "로그인에 성공하였습니다.", Toast.LENGTH_SHORT).show()
-                    val intent = Intent(this, MainActivity::class.java)
+                    val intent = Intent(this, PortfolioActivity::class.java)
                     startActivity(intent)
                     finish()
                 }
@@ -59,7 +59,7 @@ class LoginActivity : AppCompatActivity() {
 
             if (!id.isNullOrBlank()) {
                 Toast.makeText(this, "${id}님이 자동로그인 되었습니다.", Toast.LENGTH_SHORT).show();
-                val intent = Intent(this, MainActivity::class.java)
+                val intent = Intent(this, PortfolioActivity::class.java)
                 startActivityForResult(intent, REQ_CODE)
             }
         }

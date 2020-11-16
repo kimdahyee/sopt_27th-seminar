@@ -28,7 +28,7 @@
         android:layout_marginRight="64dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:hint="아이디를 입력해주세요."
+        android:hint="  아이디를 입력해주세요."
         android:textSize="15dp"
         android:background="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
@@ -52,7 +52,7 @@
         android:layout_marginTop="10dp"
         android:ems="10"
         android:inputType="textPassword"
-        android:hint="비밀번호를 입력해주세요."
+        android:hint="  비밀번호를 입력해주세요."
         android:textSize="15dp"
         android:background="@color/white"
         app:layout_constraintEnd_toEndOf="@+id/et_id_login"
@@ -88,6 +88,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:text="회원가입하러가기"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="@+id/btn_login"
         app:layout_constraintTop_toBottomOf="@+id/btn_login" />
 
