@@ -2,14 +2,6 @@
 
 
 
-**목차**
-
-[1주차 View와 ViewGroup (20.10.10)](#1주차-view와-viewgroup-(20.10.10))
-
-[2주차 RecyclerView (20.10.17)](#2주차-recyclerview-(20.10.17))
-
-
-
 ### 1주차 View와 ViewGroup (20.10.10)
 
 
@@ -206,7 +198,7 @@
 
 
 
-  <img width="230" src="https://user-images.githubusercontent.com/63586451/99229001-c1ce5c00-2830-11eb-88d1-07917ff3c9d7.png">   <img width="230" src="https://user-images.githubusercontent.com/63586451/99229003-c2ff8900-2830-11eb-8754-2e3da07534bd.png">
+  <img width="230" src="https://user-images.githubusercontent.com/63586451/99229911-fee71e00-2831-11eb-8f29-3752844270bd.PNG">   <img width="230" src="https://user-images.githubusercontent.com/63586451/99229001-c1ce5c00-2830-11eb-88d1-07917ff3c9d7.png">   <img width="230" src="https://user-images.githubusercontent.com/63586451/99229003-c2ff8900-2830-11eb-8754-2e3da07534bd.png">
 
 
 
