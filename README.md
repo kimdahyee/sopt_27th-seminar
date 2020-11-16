@@ -100,10 +100,11 @@
        		}
        	}
        }
-
+<br>
 
 
 ### 2주차 RecyclerView (20.10.17)
+<br>
 
 
 
@@ -204,17 +205,17 @@
 
 1.  배치 방향 선택을 위한 menu 생성
 
-   i )  res 폴더 안에 *menu* directory 생성 후 menu directory 안에 *xml 파일* 생성해서 *menu item* 설정
+    i )  res 폴더 안에 *menu* directory 생성 후 menu directory 안에 *xml 파일* 생성해서 *menu item* 설정
 
-   ii )  option menu  지정을 위해 onCreateOptionsMenu() 재정의
-
-   ```
-   override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-           val inflater: MenuInflater = menuInflater
-           inflater.inflate(R.menu.layout, menu)
-           return true
-   }
-   ```
+    ii )  option menu  지정을 위해 onCreateOptionsMenu() 재정의
+    
+    ```
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+            val inflater: MenuInflater = menuInflater
+            inflater.inflate(R.menu.layout, menu)
+            return true
+    }
+    ```
 
 
 
@@ -222,23 +223,23 @@
 
 3.  adapter에서 viewType에 따라 inflate되는 view를 지정
 
-   ```
-   override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PortfolioViewHolder {
-       var view = when (viewType) {
-           1 -> {
-               LayoutInflater.from(context).inflate(R.layout.item_portfolio, parent, false)
-           }
-           else -> {
-               LayoutInflater.from(context).inflate(R.layout.item_portfolio_grid, parent, false)
-           }
-       }
-       return PortfolioViewHolder(view)
-   }
-   
-   override fun getItemViewType(position: Int): Int {
-           return viewType
-   }
-   ```
+     ```
+      override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PortfolioViewHolder {
+          var view = when (viewType) {
+              1 -> {
+                  LayoutInflater.from(context).inflate(R.layout.item_portfolio, parent, false)
+              }
+              else -> {
+                  LayoutInflater.from(context).inflate(R.layout.item_portfolio_grid, parent, false)
+              }
+          }
+          return PortfolioViewHolder(view)
+      }
+
+      override fun getItemViewType(position: Int): Int {
+              return viewType
+      }
+     ```
 
 4. activity에서 선택되는 menu item에 따라 viewType과 LayoutManager를 지정
 
