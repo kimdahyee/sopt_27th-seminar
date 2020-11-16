@@ -14,9 +14,17 @@ import androidx.recyclerview.widget.RecyclerView
 class PortfolioAdapter(private val context: Context) : RecyclerView.Adapter<PortfolioViewHolder>() {
 
     var data = mutableListOf<PortfolioData>()
+    var viewType = 1;
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PortfolioViewHolder {
-        val view = LayoutInflater.from(context).inflate(R.layout.item_portfolio, parent, false)
+        var view = when (viewType) {
+            1 -> {
+                LayoutInflater.from(context).inflate(R.layout.item_portfolio, parent, false)
+            }
+            else -> {
+                LayoutInflater.from(context).inflate(R.layout.item_portfolio_grid, parent, false)
+            }
+        }
         return PortfolioViewHolder(view)
     }
 
@@ -29,6 +37,10 @@ class PortfolioAdapter(private val context: Context) : RecyclerView.Adapter<Port
 
     override fun getItemCount(): Int {
         return data.size
+    }
+
+    override fun getItemViewType(position: Int): Int {
+        return viewType
     }
 
     //click interface
