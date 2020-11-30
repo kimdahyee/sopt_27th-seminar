@@ -1,0 +1,100 @@
+package com.example.android_assignment.fragment
+
+import android.content.Intent
+import android.os.Bundle
+import androidx.fragment.app.Fragment
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.android_assignment.adapter.PortfolioAdapter
+import com.example.android_assignment.activity.PortfolioDetailActivity
+import com.example.android_assignment.R
+import com.example.android_assignment.data.PortfolioData
+import kotlinx.android.synthetic.main.activity_portfolio.rcv_portfolio
+import kotlinx.android.synthetic.main.fragment_linear.*
+
+class LinearFragment : Fragment() {
+
+    private lateinit var portfolioAdapter: PortfolioAdapter
+    val datas: MutableList<PortfolioData> = mutableListOf()
+
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_linear, container, false)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        initRcv(view)
+        loadData()
+    }
+
+    private fun initRcv(view: View) {
+        portfolioAdapter = PortfolioAdapter(view.context)
+        portfolioAdapter.viewType = 1
+
+        rcv_portfolio.adapter = portfolioAdapter
+        rcv_portfolio.layoutManager = LinearLayoutManager(view.context)
+
+        portfolioAdapter.setItemClickListener(object : PortfolioAdapter.ItemClickListener {
+            override fun onItemClick(view: View, position: Int) {
+                val clickedPortfolioIntent = Intent(view.context, PortfolioDetailActivity::class.java)
+                clickedPortfolioIntent.putExtra("title", portfolioAdapter.data[position].title)
+                clickedPortfolioIntent.putExtra("subTitle", portfolioAdapter.data[position].subTitle)
+                clickedPortfolioIntent.putExtra("date", portfolioAdapter.data[position].date)
+                clickedPortfolioIntent.putExtra("content", portfolioAdapter.data[position].content)
+                startActivity(clickedPortfolioIntent)
+            }
+        })
+    }
+
+    private fun loadData() {
+        datas.apply {
+            add (
+                PortfolioData(
+                    title = "내 이름은",
+                    subTitle = "김다혜",
+                    date = "2020/07/03",
+                    content = "이것은 부가설명입니다.")
+            )
+
+            add (
+                PortfolioData(
+                    title = "내 이름은",
+                    subTitle = "김다혜",
+                    date = "2020/07/03",
+                    content = "이것은 부가설명입니다.")
+            )
+
+            add (
+                PortfolioData(
+                    title = "내 이름은",
+                    subTitle = "김다혜",
+                    date = "2020/07/03",
+                    content = "이것은 부가설명입니다.")
+            )
+
+            add (
+                PortfolioData(
+                    title = "내 이름은",
+                    subTitle = "김다혜",
+                    date = "2020/07/03",
+                    content = "이것은 부가설명입니다.")
+            )
+
+            add (
+                PortfolioData(
+                    title = "내 이름은",
+                    subTitle = "김다혜",
+                    date = "2020/07/03",
+                    content = "이것은 부가설명입니다.")
+            )
+        }
+        portfolioAdapter.data = datas
+        portfolioAdapter.notifyDataSetChanged()
+    }
+}

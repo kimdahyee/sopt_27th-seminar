@@ -1,4 +1,4 @@
-package com.example.android_assignment
+package com.example.android_assignment.activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -7,10 +7,12 @@ import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
 import android.view.View
-import android.widget.LinearLayout
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.android_assignment.R
+import com.example.android_assignment.adapter.PortfolioAdapter
+import com.example.android_assignment.data.PortfolioData
 import kotlinx.android.synthetic.main.activity_portfolio.*
 
 class PortfolioActivity : AppCompatActivity() {

@@ -1,10 +1,13 @@
-package com.example.android_assignment
+package com.example.android_assignment.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.android_assignment.viewHolder.PortfolioViewHolder
+import com.example.android_assignment.R
+import com.example.android_assignment.data.PortfolioData
 
 /**
  * Created By kimdahyee

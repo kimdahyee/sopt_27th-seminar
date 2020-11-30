@@ -1,4 +1,4 @@
-package com.example.android_assignment
+package com.example.android_assignment.data
 
 /**
  * Created By kimdahyee

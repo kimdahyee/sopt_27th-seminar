@@ -25,10 +25,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="18dp"
+        android:layout_marginTop="20dp"
         android:text="TextView"
-        android:textSize="14dp"
         android:textColor="@color/white"
+        android:textSize="14dp"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/img_portfolio"
         app:layout_constraintTop_toTopOf="parent" />
@@ -37,10 +37,10 @@
         android:id="@+id/tv_subtitle_portfolio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:text="TextView"
-        android:textSize="12dp"
         android:textColor="@color/white"
+        android:textSize="12dp"
         app:layout_constraintStart_toStartOf="@+id/tv_title_portfolio"
         app:layout_constraintTop_toBottomOf="@+id/tv_title_portfolio" />
 

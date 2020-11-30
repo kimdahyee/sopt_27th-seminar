@@ -1,8 +1,10 @@
-package com.example.android_assignment
+package com.example.android_assignment.viewHolder
 
 import android.view.View
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.android_assignment.R
+import com.example.android_assignment.data.PortfolioData
 
 /**
  * Created By kimdahyee

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SignUpActivity"
+    tools:context=".activity.SignUpActivity"
     android:background="@color/black">
 
     <TextView
@@ -28,9 +28,10 @@
         android:layout_marginRight="64dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:hint="  이름을 입력해주세요."
-        android:background="@color/white"
+        android:hint="    이름을 입력해주세요."
         android:textSize="15dp"
+        android:backgroundTint="@color/white"
+        android:background="@drawable/et_corner_radius"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/tv_name"
         app:layout_constraintTop_toBottomOf="@+id/tv_name" />
@@ -52,9 +53,10 @@
         android:layout_marginTop="10dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:hint="  아이디를 입력해주세요."
-        android:background="@color/white"
+        android:hint="    아이디를 입력해주세요."
         android:textSize="15dp"
+        android:backgroundTint="@color/white"
+        android:background="@drawable/et_corner_radius"
         app:layout_constraintEnd_toEndOf="@+id/et_name"
         app:layout_constraintStart_toStartOf="@+id/tv_id"
         app:layout_constraintTop_toBottomOf="@+id/tv_id" />
@@ -76,8 +78,9 @@
         android:layout_marginTop="10dp"
         android:ems="10"
         android:inputType="textPassword"
-        android:hint="  비밀번호를 입력해주세요."
-        android:background="@color/white"
+        android:hint="    비밀번호를 입력해주세요."
+        android:backgroundTint="@color/white"
+        android:background="@drawable/et_corner_radius"
         android:textSize="15dp"
         app:layout_constraintEnd_toEndOf="@+id/et_id"
         app:layout_constraintStart_toStartOf="@+id/tv_password"
@@ -90,7 +93,8 @@
         android:layout_marginTop="30dp"
         android:text="회원가입"
         android:textColor="@color/white"
-        android:background="@color/main"
+        android:backgroundTint="@color/main"
+        android:background="@drawable/et_corner_radius"
         app:layout_constraintEnd_toEndOf="@+id/et_password"
         app:layout_constraintStart_toStartOf="@+id/et_password"
         app:layout_constraintTop_toBottomOf="@+id/et_password" />
