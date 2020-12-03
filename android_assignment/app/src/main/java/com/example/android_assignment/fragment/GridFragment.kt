@@ -64,8 +64,32 @@ class GridFragment : Fragment() {
 
             add (
                 PortfolioData(
-                    title = "내 이름은",
-                    subTitle = "김다혜",
+                    title = "나는 스물셋",
+                    subTitle = "암트웬티쓰리",
+                    date = "1998/05/21",
+                    content = "이것은 부가설명입니다.")
+            )
+
+            add (
+                PortfolioData(
+                    title = "SOPT 27th",
+                    subTitle = "android OB",
+                    date = "2020/07/03",
+                    content = "이것은 부가설명입니다.")
+            )
+
+            add (
+                PortfolioData(
+                    title = "지금은",
+                    subTitle = "학교에서 일하는 중",
+                    date = "2020/07/03",
+                    content = "이것은 부가설명입니다.")
+            )
+
+            add (
+                PortfolioData(
+                    title = "나는 지금",
+                    subTitle = "집에 가고싶어",
                     date = "2020/07/03",
                     content = "이것은 부가설명입니다.")
             )
@@ -80,16 +104,32 @@ class GridFragment : Fragment() {
 
             add (
                 PortfolioData(
-                    title = "내 이름은",
-                    subTitle = "김다혜",
+                    title = "나는 스물셋",
+                    subTitle = "암트웬티쓰리",
+                    date = "1998/05/21",
+                    content = "이것은 부가설명입니다.")
+            )
+
+            add (
+                PortfolioData(
+                    title = "SOPT 27th",
+                    subTitle = "android OB",
                     date = "2020/07/03",
                     content = "이것은 부가설명입니다.")
             )
 
             add (
                 PortfolioData(
-                    title = "내 이름은",
-                    subTitle = "김다혜",
+                    title = "지금은",
+                    subTitle = "학교에서 일하는 중",
+                    date = "2020/07/03",
+                    content = "이것은 부가설명입니다.")
+            )
+
+            add (
+                PortfolioData(
+                    title = "나는 지금",
+                    subTitle = "집에 가고싶어",
                     date = "2020/07/03",
                     content = "이것은 부가설명입니다.")
             )
