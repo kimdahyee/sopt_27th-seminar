@@ -171,6 +171,8 @@
 > GridLayout 만들기
 
 📋 menu에서 LinearLayout 클릭 시 배치 방향 -> Linear / GridLayout 클릭 시 배치 방향 -> Grid
+
+
 <img width="230" src="https://user-images.githubusercontent.com/63586451/99229911-fee71e00-2831-11eb-8f29-3752844270bd.PNG">   <img width="230" src="https://user-images.githubusercontent.com/63586451/99229001-c1ce5c00-2830-11eb-88d1-07917ff3c9d7.png">   <img width="230" src="https://user-images.githubusercontent.com/63586451/99229003-c2ff8900-2830-11eb-8754-2e3da07534bd.png">
 <br>
 1.  배치 방향 선택을 위한 menu 생성
@@ -189,27 +191,32 @@
     <br>   
 
 2.  Grid 방향을 위한 새로운 layout 작성
-   <br>
+<br>
+
+
 3.  adapter에서 viewType에 따라 inflate되는 view를 지정
-    
-    ```kotlin
-	override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PortfolioViewHolder {  
-	     var view = when (viewType) {  
-		     1 -> {  
-			     LayoutInflater.from(context).inflate(R.layout.item_portfolio, parent, false)  
-		     }  
-		     else -> {  
-			     LayoutInflater.from(context).inflate(R.layout.item_portfolio_grid, parent, false)  
-		     }  
-		 }  
-		 return PortfolioViewHolder(view)  
-	}  
+
+```kotlin
+override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PortfolioViewHolder {  
+	var view = when (viewType) {  
+	     1 -> {  
+		     LayoutInflater.from(context).inflate(R.layout.item_portfolio, parent, false)  
+	     }  
+	     else -> {  
+		     LayoutInflater.from(context).inflate(R.layout.item_portfolio_grid, parent, false)  
+	     }  
+	 }  
+	 return PortfolioViewHolder(view)  
+}  
     ​  
-    override fun getItemViewType(position: Int): Int {  
-	     return viewType  
-    }
-	``` 
-	<br>   
+override fun getItemViewType(position: Int): Int {  
+     return viewType  
+}
+```
+
+<br>
+
+
 
 4.  activity에서 선택되는 menu item에 따라 viewType과 LayoutManager를 지정
     
@@ -228,4 +235,3 @@
 	     return super.onOptionsItemSelected(item)  
     }
 	```
-	
