@@ -81,7 +81,7 @@ class LinearFragment : Fragment() {
             add (
                 PortfolioData(
                     title = "지금은",
-                    subTitle = "학교에서 일하는 중",
+                    subTitle = "일하는 중",
                     date = "2020/07/03",
                     content = "이것은 부가설명입니다.")
             )
@@ -121,7 +121,7 @@ class LinearFragment : Fragment() {
             add (
                 PortfolioData(
                     title = "지금은",
-                    subTitle = "학교에서 일하는 중",
+                    subTitle = "일하는 중",
                     date = "2020/07/03",
                     content = "이것은 부가설명입니다.")
             )

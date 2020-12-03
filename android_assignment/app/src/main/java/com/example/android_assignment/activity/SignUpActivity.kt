@@ -67,9 +67,9 @@ class SignUpActivity : AppCompatActivity() {
         soptServiceImpl.service
             .signup(
                 SignUpRequest(
-                    email = et_id.toString(),
-                    password = et_password.toString(),
-                    userName = et_name.toString()
+                    email = et_id.text.toString(),
+                    password = et_password.text.toString(),
+                    userName = et_name.text.toString()
                 )
             ).enqueue(object : Callback<SignUpResponse> {
                 override fun onFailure(call: Call<SignUpResponse>, t: Throwable) { // 통신 실패
@@ -82,7 +82,7 @@ class SignUpActivity : AppCompatActivity() {
                     response.takeIf { it.isSuccessful }
                         ?.body()
                         ?.let {
-                            Toast.makeText(this@SignUpActivity, "회원가입에 성공하였습니다.", Toast.LENGTH_SHORT).show()
+                            Toast.makeText(this@SignUpActivity, "회원가입 성공 !! 반가워요 :)", Toast.LENGTH_SHORT).show()
                             val intent = Intent()
                             intent.putExtra("id", et_id.text.toString())
                             intent.putExtra("password", et_password.text.toString())

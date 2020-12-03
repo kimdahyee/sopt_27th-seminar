@@ -67,8 +67,8 @@ class LoginActivity : AppCompatActivity() {
         soptServiceImpl.service
             .signin(
                 SignInRequest(
-                    email = et_id_login.toString(),
-                    password = et_password_login.toString()
+                    email = et_id_login.text.toString(),
+                    password = et_password_login.text.toString()
                 )
             ).enqueue(object : Callback<SignInResponse> {
 
@@ -84,7 +84,7 @@ class LoginActivity : AppCompatActivity() {
                     response.takeIf { it.isSuccessful }
                         ?.body()
                         ?.let {
-                            Toast.makeText(this@LoginActivity, "로그인에 성공하였습니다.", Toast.LENGTH_SHORT).show()
+                            Toast.makeText(this@LoginActivity, "로그인 성공 !! 이제 들어가보자 :)", Toast.LENGTH_SHORT).show()
                             val intent = Intent(this@LoginActivity, MainActivity::class.java)
                             startActivity(intent)
                             finish()
