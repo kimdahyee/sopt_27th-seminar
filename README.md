@@ -436,22 +436,24 @@
 
 2.  retrofit interface 생성 - SoptService.kt
 
-   ```kotlin
-   interface SoptService {
-   
-       @Headers("Content-Type:application/json")
-       @POST("/users/signup")
-       fun signup(
-           @Body body: SignUpRequest
-       ): Call<SignUpResponse>
-   
-       @Headers("Content-Type:application/json")
-       @POST("/users/signin")
-       fun signin(
-           @Body body: SignInRequest
-       ): Call<SignInResponse>
-   }
-   ```
+      ```kotlin
+      interface SoptService {
+
+          @Headers("Content-Type:application/json")
+          @POST("/users/signup")
+          fun signup(
+              @Body body: SignUpRequest
+          ): Call<SignUpResponse>
+
+          @Headers("Content-Type:application/json")
+          @POST("/users/signin")
+          fun signin(
+              @Body body: SignInRequest
+          ): Call<SignInResponse>
+      }
+      ```
+
+   <br>
 
 3. 구현체 생성 - SoptServiceImpl.kr
 
